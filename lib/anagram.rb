@@ -12,8 +12,8 @@ class Anagram
           if chr.length == @words.length
               chr.chars == @words.chars
               all << chr
-          end
-        return all
+          end    
          }
+         return all
    end
 end
