@@ -7,13 +7,13 @@ class Anagram
    end
 
    def match(collection)
-     all = []
+     @all = []
         collection.each { |chr|
           if chr.length == @words.length
               chr.chars == @words.chars
-              all << chr
-          end    
+              @all << chr
+          end
          }
-         return all
+         return @all
    end
 end
