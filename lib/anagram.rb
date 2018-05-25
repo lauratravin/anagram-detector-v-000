@@ -6,14 +6,14 @@ class Anagram
      @words = w
    end
 
-   def match(collection)
-     @all = []
-        collection.each { |chr|
-          if chr.length == @words.length
-              chr.chars == @words.chars
-              @all << chr
-          end
-         }
-         return @all
-   end
+  def match(collection)
+    all = []
+       collection.each { |chr|
+
+         if @words.chars == chr.chars
+           all << chr
+         end
+       }
+       all
+  end
 end
