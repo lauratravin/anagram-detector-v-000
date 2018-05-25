@@ -1,4 +1,5 @@
 # Your code goes here!
+
 class Anagram
    attr_accessor :words
 
@@ -10,7 +11,7 @@ class Anagram
     all = []
        collection.each { |chr|
 
-         if @words.chars == chr.chars
+         if @words.chars.sort.join == chr.chars.sort.join
            all << chr
          end
        }
